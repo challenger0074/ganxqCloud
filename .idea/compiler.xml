@@ -18,6 +18,7 @@
       <module name="cloud" target="17" />
       <module name="cloudSup1 (1)" target="17" />
       <module name="cloudSup1 (2)" target="17" />
+      <module name="sample-spring-microservices-new" target="1.8" />
       <module name="spring-boot" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -32,7 +33,7 @@
       <module name="clouldRegister" options="-parameters" />
       <module name="dbControl" options="-parameters" />
       <module name="spring-boot" options="-parameters" />
-      <module name="spring-cloud" options="-parameters" />
+      <module name="spring-cloud" options="" />
     </option>
   </component>
 </project>
