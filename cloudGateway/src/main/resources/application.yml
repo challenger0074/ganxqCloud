@@ -1,0 +1,33 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: client1_route
+          uri: lb://client1
+          predicates:
+            - Path=/client1/**
+        - id: client2_route
+          uri: lb://client2
+          predicates:
+            - Path=/client2/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+
+
+logging:
+  level:
+    com.netflix.discovery: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+
+
+

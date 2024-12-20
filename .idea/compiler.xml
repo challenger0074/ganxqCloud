@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudSup2" />
+        <module name="dbControl" />
+        <module name="cloudSup1" />
+        <module name="cloudGateway" />
+        <module name="clouldRegister" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud" target="17" />
+      <module name="cloudSup1 (1)" target="17" />
+      <module name="cloudSup1 (2)" target="17" />
+      <module name="spring-boot" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud" options="-parameters" />
+      <module name="cloudGateway" options="-parameters" />
+      <module name="cloudSup1" options="-parameters" />
+      <module name="cloudSup1 (1)" options="-parameters" />
+      <module name="cloudSup1 (2)" options="-parameters" />
+      <module name="cloudSup2" options="-parameters" />
+      <module name="clouldRegister" options="-parameters" />
+      <module name="dbControl" options="-parameters" />
+      <module name="spring-boot" options="-parameters" />
+      <module name="spring-cloud" options="-parameters" />
+    </option>
+  </component>
+</project>
